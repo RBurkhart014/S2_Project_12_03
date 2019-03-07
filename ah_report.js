@@ -41,6 +41,8 @@ var majorDonors = donors.filter(findMajorDonors);
 
 majorDonors.sort(donorSortDescending);
 
+//these first 6 rules add the amount of cash and the "87" on the first chart on the webpage
+
 var donorTable = "<table><caption>Major Donors</caption> <tr><th>Donation</th><th>Donor ID</th><th>Date</th><th>Name</th><th>Address</th><th>Phone</th><th>E-Mail</th></tr>";
 
 majorDonors.forEach(writeDonorRow);
@@ -49,6 +51,7 @@ donorTable += "</table>";
 
 document.getElementById("donorTable").innerHTML = donorTable;
 
+//these previous 4 elements just display the giant chart on the webpage 
 
 
 function calcSum(donorAmt) {
